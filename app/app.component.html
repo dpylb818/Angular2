@@ -1,0 +1,13 @@
+<div>
+    <div>
+       <h1> Task mangaer</h1>
+    </div>
+    <div>
+        <input name="input" #TaskTitle>
+        <button (click)="addTask(TaskTitle.value); TaskTitle.value=''">Add</button>
+    </div>
+    <div *ngFor="let task of tasks">        
+        <input type="checkbox">
+        <label>{{task}}</label>
+    </div>
+</div>
